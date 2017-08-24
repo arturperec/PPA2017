@@ -36,6 +36,10 @@
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:padding="@dimen/_12sdp"
-        android:background="@drawable/bottom_border"/>
+        android:background="@drawable/bottom_border"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/login_error"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_8sdp" />
 
 </RelativeLayout>
