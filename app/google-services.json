@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "741997166763",
+    "firebase_url": "https://ppafirebaselogin2017.firebaseio.com",
+    "project_id": "ppafirebaselogin2017",
+    "storage_bucket": "ppafirebaselogin2017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741997166763:android:90794ff9cfb08edf",
+        "android_client_info": {
+          "package_name": "some.weird.ppafirebaselogin2017"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741997166763-gshv5jqoqi9cvv3lfetcrdpngv1kg50j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "some.weird.ppafirebaselogin2017",
+            "certificate_hash": "68fb76874a29e0cb6c7ba8dd2d70c79726105af3"
+          }
+        },
+        {
+          "client_id": "741997166763-7vch5do7012unkbb4v2p1flq9pd8q5qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWTbStYYMjri8_AShWLt7r-hJgd31FLuk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741997166763-7vch5do7012unkbb4v2p1flq9pd8q5qa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
