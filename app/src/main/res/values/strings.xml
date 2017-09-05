@@ -13,8 +13,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
 
-    <string name="profile_name">Delaroy Studios</string>
-    <string name="country_location">Lagos</string>
+    <string name="profile_name">Artur Pereć</string>
+    <string name="country_location">Poznań</string>
 
     <string name="menu_profile">Profile</string>
     <string name="menu_chat">Chat</string>
@@ -27,7 +27,7 @@
     <string name="hello_blank_fragment">Hello My Little Willy Wonka!</string>
 
     <string name="profile_names">Display name</string>
-    <string name="induce_smile">Delaroy Studios</string>
+    <string name="induce_smile">Artur Pereć</string>
 
     <string name="edit_profile_name">Name</string>
     <string name="edit_profile_country">Country</string>
