@@ -7,6 +7,7 @@
     <string name="no_text"> </string>
     <string name="sign_up_button">SIGN UP</string>
     <string name="log_in">Login</string>
+    <string name="already_registered">Already registered? \n Click HERE to login!</string>
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
