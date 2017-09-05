@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/_8sdp"
-        android:src="@drawable/small_profile_image"
+        android:src="@drawable/medium_profile_image"
         android:id="@+id/circleView"/>
 
     <TextView
