@@ -81,10 +81,9 @@ public class LoginActivity extends AppCompatActivity {
 
                 ((FirebaseApplication)getApplication()).loginAUser(LoginActivity.this, enteredEmail, enteredPassword, loginError);
         }
-            });
-
-        }
-        @Override
+        });
+    }
+    @Override
     public void onStart(){
         super.onStart();
     }
