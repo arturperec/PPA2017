@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.google.firebase.database.FirebaseDatabase;
 
+import some.weird.ppafirebaselogin2017.Firebase.FirebaseDatabaseHelper;
 import some.weird.ppafirebaselogin2017.Helper.Helper;
 import some.weird.ppafirebaselogin2017.Helper.SimpleDividerItemDecoration;
 
