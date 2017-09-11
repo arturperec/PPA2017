@@ -17,6 +17,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import org.w3c.dom.Text;
 
+import some.weird.ppafirebaselogin2017.Helper.Helper;
+
 /**
  * Created by artur on 05.09.2017.
  */
@@ -39,7 +41,6 @@ public class LoginActivity extends AppCompatActivity {
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-
         ActionBar actionBar = getSupportActionBar();
         if(actionBar != null){
             actionBar.hide();
@@ -56,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
         signUpText = (TextView) findViewById(R.id.register);
         signUpText.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 Intent signUpIntent = new Intent(LoginActivity.this, SignUpActivity.class);
                 startActivity(signUpIntent);
             }
@@ -73,12 +74,14 @@ public class LoginActivity extends AppCompatActivity {
                     Helper.displayMessageToast(LoginActivity.this, "Login fields must be filled.");
                     return;
                 }
-                if (!Helper.isValidEmail(enteredEmail)){
+                if (!Helper.isValidEmail(enteredEmail)) {
                     Helper.displayMessageToast(LoginActivity.this, "Wrong password entered.");
                     return;
-                    ((FirebaseApplication)getApplication().loginAUser(LoginActivity.this, enteredEmail, enteredPassword, loginError));
                 }
-            }};
+
+                ((FirebaseApplication)getApplication()).loginAUser(LoginActivity.this, enteredEmail, enteredPassword, loginError);
+        }
+            });
 
         }
         @Override
@@ -88,7 +91,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     public void onStop(){
         super.onStop();
-        if ((FirebaseApplication)getApplication()).mAuthListener != null){
+        if (((FirebaseApplication)getApplication()).mAuthListener != null){
 
         }
     }
