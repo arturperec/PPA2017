@@ -62,11 +62,12 @@
         android:id="@+id/login_button"
         android:layout_below="@+id/password"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:text="@string/login_button"
         android:paddingBottom="@dimen/_16sdp"
+        android:paddingTop="@dimen/_16sdp"
         android:textStyle="bold"
-        android:background="@color/colorGray"
+        android:background="@color/colorPrimaryDark"
         android:layout_marginTop="@dimen/_8sdp"/>
 
     <TextView
