@@ -7,7 +7,7 @@
     tools:context="some.weird.ppafirebaselogin2017.ProfileFragment">
 
     <LinearLayout
-        android:id="@id/profile_header"
+        android:id="@+id/profile_header"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_130sdp"
         android:orientation="vertical"

@@ -1,9 +1,11 @@
 package some.weird.ppafirebaselogin2017;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
@@ -21,9 +23,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.database.FirebaseDatabase;
+
 
 import some.weird.ppafirebaselogin2017.Firebase.FirebaseDatabaseHelper;
+import some.weird.ppafirebaselogin2017.Firebase.FirebaseStorageHelper;
 import some.weird.ppafirebaselogin2017.Helper.Helper;
 import some.weird.ppafirebaselogin2017.Helper.SimpleDividerItemDecoration;
 
@@ -110,7 +113,9 @@ public class ProfileFragment extends Fragment {
             FirebaseStorageHelper storageHelper = new FirebaseStorageHelper(getActivity());
 
             if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_READ_PERMISSION);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                    ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_READ_PERMISSION);
+                }
                 return;
             }
             storageHelper.saveProfileImageToCloud(id, selectedImageUri, profilePhoto);
@@ -122,7 +127,7 @@ public class ProfileFragment extends Fragment {
         Cursor cursor = getActivity().getContentResolver().query(uri, projection, null, null, null);
         assert cursor != null;
         int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
-        cursor.moveToFrist();
+        cursor.moveToFirst();
         int columnIndex = cursor.getColumnIndex(projection[0]);
         String filePath = cursor.getString(columnIndex);
         cursor.close();
