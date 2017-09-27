@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import some.weird.ppafirebaselogin2017.Helper.Helper;
+
 /**
  * Created by artur on 05.09.2017.
  */
@@ -49,15 +51,20 @@ public class ProfileActivity extends AppCompatActivity {
                 int id = item.getItemId();
 
                 if (id == R.id.nav_profile) {
-                    fragment = new ProfileFragment();
+                    //fragment = new ProfileFragment();
+                    Helper.displayMessageToast(ProfileActivity.this, "Going to your profile..");
                 }else if (id == R.id.nav_chat){
-
+                    Helper.displayMessageToast(ProfileActivity.this, "Going to chat..");
                 }else if (id == R.id.nav_contact){
-
-                }else if (id == R.id.nav_online){
-
-                }else if (id == R.id.nav_logout){
-
+                    Helper.displayMessageToast(ProfileActivity.this, "Going to contacts..");
+                }else if (id == R.id.nav_settings) {
+                    Helper.displayMessageToast(ProfileActivity.this, "Going to Advanced settings..");
+                }
+                else if (id == R.id.nav_online){
+                    Helper.displayMessageToast(ProfileActivity.this, "Sharing your profile..");
+                }
+                else if (id == R.id.nav_logout){
+                    Helper.displayMessageToast(ProfileActivity.this, "Logging out..");
                 }
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
                 transaction.replace(R.id.main_container_wrapper, fragment);

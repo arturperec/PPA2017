@@ -21,19 +21,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/small_profile_image"
+            android:paddingTop="@dimen/_4sdp"
+            android:src="@drawable/large_profile_image"
             android:id="@+id/circleView"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/profile_name"
-            android:paddingTop="@dimen/_18sdp"
+            android:paddingTop="@dimen/_4sdp"
             android:textSize="@dimen/_16sdp"
             android:text="@string/profile_name"
             android:textColor="@color/colorWhite"
             android:layout_gravity="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
 
         <TextView
             android:layout_width="wrap_content"

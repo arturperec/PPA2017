@@ -15,21 +15,21 @@
             android:icon="@drawable/ic_slideshow_black_24dp"
             android:title="@string/menu_contact"/>
         <item
-            android:id="@+id/nav_online"
+            android:id="@+id/nav_settings"
             android:icon="@drawable/ic_build_black_24dp"
-            android:title="@string/menu_chat"/>
+            android:title="@string/menu_settings"/>
     </group>
 
     <item android:title="Settings">
         <menu>
             <item
-                android:id="@+id/nav_settings"
+                android:id="@+id/nav_online"
                 android:icon="@drawable/ic_share_black_24dp"
-                android:title="@string/menu_settings"/>
+                android:title="@string/menu_online"/>
             <item
                 android:id="@+id/nav_logout"
                 android:icon="@drawable/ic_send_black_24dp"
-                android:title="@string/menu_settings"/>
+                android:title="@string/menu_logout"/>
         </menu>
     </item>
 </menu>
